@@ -1,5 +1,5 @@
 %% Tornado system: Set the kernel (Eigenvalue matrix)
-a = +0.035; b = 5.5;
+a = +0.035; b = 10.5;
 l3 = +0.08;
 D = [ a  b   0;
      -b  a   0;
