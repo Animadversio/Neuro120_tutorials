@@ -3,8 +3,8 @@ rndM = randn(3);
 rndM = rndM ./ sqrt(sum(rndM.^2,1));
 
 %% Set the kernel (Eigenvalue matrix)
-a = -0.05; b = 5.5;
-l3 = -0.01;
+a = -0.4; b = 5.5;
+l3 = -0.05;
 D = [ a  b   0;
      -b  a   0;
       0  0  l3];
@@ -22,7 +22,7 @@ Scale=set_scale();
 plot3(Scale*[0,rndM(1,1)],Scale*[0,rndM(2,1)],Scale*[0,rndM(3,1)],'r','LineWidth',2.0)
 plot3(Scale*[0,rndM(1,2)],Scale*[0,rndM(2,2)],Scale*[0,rndM(3,2)],'g','LineWidth',2.0)
 plot3(Scale*[0,rndM(1,3)],Scale*[0,rndM(2,3)],Scale*[0,rndM(3,3)],'b','LineWidth',2.0)
-legend(["Traj X","Traj X","Eigv1","Eigv2","Eigv3"])
+legend(["Traj X","Eigv1","Eigv2","Eigv3"])
 function Scale=set_scale()
 XLIM = xlim();
 YLIM = ylim();
